@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talkto Panel</title>
+    <link rel="icon" type="png" href="logo/title-logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <div class="row">
+            <div class="details">
+                <div class="location">
+                    <a href="#" class="icon"><ion-icon name="location-outline"></ion-icon></a>
+                    <p>Sec 17, Near munshipulia, Indira nagar, Lucknow 226016</p>
+                </div>
+
+                <div class="email">
+                    <a href="mailto:bids@talkto-panel.com" class="icon"><ion-icon name="mail-outline"></ion-icon></a>
+                    <p><a href="mailto:bids@talkto-panel.com">bids@talkto-panel.com</a></p>
+                </div>
+            </div>
+            
+            <div class="social-media-links">
+                <!-- <a href="#" class="linkdin">
+                    <img src="logo/linkedIn-icon.png" target="_blank" alt="linkdin">
+                </a>
+
+                <a href="#" class="instagram">
+                    <img src="logo/instagram-icon.png" target="_blank" alt="instagram">
+                </a>
+
+                <a href="#" class="twitter">
+                    <img src="" alt="">
+                </a>
+
+                <a href="#" class="facebook">
+                    <img src="" alt="">
+                </a> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- navbar section -->
+    <nav>
+        <div id="navbar">
+            <div id="navbar-logo">
+                <img src="logo/talkto-panel-logo.png" alt="Talkto Panel">
+                <span id="navbar-open-icon" onclick="openSidebar()"><ion-icon name="menu-outline"></ion-icon></span>
+                <span id="navbar-close-icon" onclick="closeSidebar()"><ion-icon name="close-outline"></ion-icon></span>
+            </div>
+
+            <div id="navbar-buttons">
+                <ul id="all-buttons">
+                    <li><a href="#" onclick="goToSection(event, 'section1', 'home')">Home</a></li>
+                    <li><a href="#" onclick="goToSection(event, 'section2', 'about')">About</a></li>
+                    <li><a href="#" onclick="goToSection(event, 'section3', 'services')"">Service</a></li>
+                    <li><a href="#" onclick="goToSection(event, 'section4', 'careers')">Careers</a></li>
+                    <li><a href="#" onclick="goToSection(event, 'section5', 'contact')">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="section1">
+            <div id="home-image">
+                <img src="images/home-image.png" alt="image">
+            </div>
+
+            <div id="container">
+                <div id="home-details">
+                    <h1>Welcome to TALKTO PANEL</h1>
+                    <p>
+                        At Talkto Panel, we are dedicated to providing comprehensive market research solutions that empower businesses to make 
+                        informed decisions. Our team of experienced analysts and researchers is passionate about understanding market trends, consumer 
+                        behaviour, and competitive dynamics to help our clients thrive in an ever-evolving marketplace.
+                    </p>
+                    <br>
+                    <p>
+                        Our sampling methods and panels are built upon sophisticated technology, honest communication and respectful compensation to 
+                        encourage participation, increase the response rate and to deliver high quality results.
+                    </p>
+                </div>
+
+                <div id="home-map">
+                    <img src="images/map-image.png" alt="map" style="width: 100%">
+                </div>
+            </div>
+        </section>
+
+        <section id="section2">
+            <div id="about">
+                <div id="container">
+                    <div id="image-box">
+                        <img src="images/about-image.png" alt="image" style="width: 100%;">
+                    </div>
+                    
+                    <div id="sub-container">
+                        <div id="our-mission">
+                            <h1>Our Mission</h1>
+                            <p>
+                                Our mission is to deliver actionable insights that drive strategic growth. We believe that informed decisions 
+                                are the cornerstone of successful businesses, and we strive to provide our clients with the data and analysis 
+                                they need to stay ahead of the competition.
+                            </p>
+                        </div>
+                           
+                        <div id="our-approach">
+                            <h1>Our Approach</h1>
+                            <p>
+                                We at Talkto Panel utilize both qualitative and quantitative research methods to gather reliable data. 
+                                Our approach is rooted in collaboration, ensuring that we understand your unique challenges and goals. We 
+                                combine cutting-edge technology with expert analysis to deliver insights that are not only relevant but 
+                                also actionable.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="our-values">
+                    <h1>Our Values</h1>
+
+                    <p><b>Intigrity : </b>We uphold the highest standards of honesty and transparency in all our interactions.</p>
+
+                    <p><b>Innovation : </b>We embrace new ideas and technologies to enhance our research processes and deliver superior results.</p>
+
+                    <p><b>Client Centricity : </b>Our clients are at the heart of everything we do. We listen, adapt, and respond to their needs.</p>
+
+                    <p><b>Excellence : </b>We are committed to delivering high-quality research that exceeds expectations.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3">
+            <div id="services">
+                <h1>Our Services</h1>
+                <div id="container">
+                    <div id="sub-container">
+                        <img src="images/consumer-research-image.png" alt="image">
+
+                        <div id="details">
+                            <h2>Consumer Research</h2>
+                            <p>
+                                In today’s competitive marketplace, understanding your consumers is crucial for success.
+                                Certitude Research uncovers insights into consumer preferences, and motivations.
+                            </p>
+                        </div>
+
+                        <a href="consumer-research/" id="know-more-button">Know More</a>
+                    </div>
+
+                    <div id="sub-container">
+                        <img src="images/b2b-research-image.png" alt="image">
+
+                        <div id="details">
+                            <h2>B2B Research</h2>
+                            <p>
+                                In the complex world of business-to-business (B2B) transactions, understanding the market landscape, 
+                                industry trends, and customer needs is crucial for growth and success.
+                            </p>
+                        </div>
+
+                        <a href="b2b-research/" id="know-more-button">Know More</a>
+                    </div>
+
+                    <div id="sub-container">
+                        <img src="images/healthcare-research-image.png" alt="image">
+
+                        <div id="details">
+                            <h2>Healthcare Research</h2>
+                            <p>
+                                Certitude Research works with dynamic methodologies and frameworks tailored 
+                                for healthcare market research and analytics solutions.
+                            </p>
+                        </div>
+
+                        <a href="healthcare-research/" id="know-more-button">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section4">
+            <div id="container">
+                <div id="career-form">
+                    <h1>Join Our Team</h1>
+                    <form action="https://api.web3forms.com/submit" method="post">
+                        <h2>Become a team member today</h2>
+                        <input type="hidden" name="access_key" value="f98e596a-7eab-4360-96f9-9d79db899c60">
+                        <div id="input-box">
+                            <input type="text" placeholder="Name" name="name" maxlength="25" required>
+                            <input type="email" placeholder="Email" name="email" required>
+                        </div>
+                        <div id="input-box">
+                            <input type="text" placeholder="Subject" name="Subject" required>
+                            <input type="file" placeholder="Upload Your CV" name="CV" required>
+                        </div>
+                        <textarea name="Comment" id="Comment" placeholder="Comment(Optional)" maxlength="400"></textarea>
+
+                        <button id="career-submit-btn" type="submit">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+
+                <div id="career-image">
+                    <img src="images/join-our-team-image.png" alt="Join Our Team">
+                </div>
+            </div>
+        </section>
+
+        <section id="section5">
+            <div id="container">
+                <div id="contact-details">
+                    <h1>Get in touch</h1>
+                    <h2>Contact Information</h2>
+
+                    <div class="location">
+                        <a href="#" class="icon"><ion-icon name="location-outline"></ion-icon></a>
+                        <p>Sec 17, Near munshipulia, Indira nagar, Lucknow 226016</p>
+                    </div>
+
+                    <div class="email">
+                        <a href="mailto:bids@talkto-panel.com" class="icon"><ion-icon name="mail-outline"></ion-icon></a>
+                        <p><a href="mailto:bids@talkto-panel.com">bids@talkto-panel.com</a></p>
+                    </div>
+
+                    <div class="phone">
+                        <a href=""><ion-icon name="call-outline"></ion-icon></a>
+                        <p>+91 9670652656</p>
+                    </div>
+
+                    <div id="contact-details-btn">
+                        <a href="#" onclick="goToSection(event, 'section1', 'home')">Get Direction</a>
+                    </div>
+                </div>
+
+                <div id="contact-form">
+                    <form action="https://api.web3forms.com/submit" method="post">
+                        <h1>Contact form</h1>
+                        <p>Or, you can just send and email:bids@talkto-panel.com</p>
+                        <input type="hidden" name="access_key" value="5102b8db-2193-48bc-b3b5-5d798790c7b1">
+                        <input type="text" placeholder="Enter Your Name" name="Name" max="25" required>
+                        <input type="email" placeholder="Enter your Email" name="Email" required>
+                        <input type="tel" placeholder="Enter Your Mobile No." name="Phone No." minlength="10" maxlength="10" required>
+                        <input type="text" placeholder="Subject" name="Subject" max="40" required>
+                        <textarea name="Comment" id="#comment" placeholder="Comment(Optional)" maxlength="250"></textarea>
+                        <button id="contact-form-btn" type="submit">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="container">
+            <div id="footer-details">
+                <div id="logo-links">
+                    <img src="logo/talkto-panel-logo.png" alt="Talkto Panel">
+
+                    <div class="links">
+                        <h1>Quick Links</h1>
+                        <a href="#" onclick="goToSection(event, 'section2', 'about')">About us</a>
+                        <a href="#" onclick="goToSection(event, 'section3', 'services')">Services</a>
+                        <a href="#" onclick="goToSection(event, 'section4', 'careers')">Careers</a>
+                    </div>
+                </div>
+
+                <div id="contact-info">
+                    <h1>Contact Information</h1>
+
+                    <div class="email">
+                        <a href="mailto:bids@talkto-panel.com" class="icon"><ion-icon name="mail-outline"></ion-icon></a>
+                        <p><a href="mailto:bids@talkto-panel.com">bids@talkto-panel.com</a></p>
+                    </div>
+
+                    <div class="location">
+                        <a href="#" class="icon"><ion-icon name="location-outline"></ion-icon></a>
+                        <p>Sec 17, Near munshipulia, Indira nagar, Lucknow 226016</p>
+                    </div>
+
+                    <div class="phone">
+                        <a href="#"><ion-icon name="call-outline"></ion-icon></a>
+                        <p>+91 9670652656</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer-bottom">
+                <p>Copyright © 2026 Talkto Panel | Privacy Policy | Cookie Policy</p>
+                
+                <div class="social-media-links">
+                    <!-- <a href="#" target="_blank" class="linkdin">
+                        <img src="logo/linkedIn-icon.png" alt="linkdin">
+                    </a>
+
+                    <a href="#" target="_blank" class="instagram">
+                        <img src="logo/instagram-icon.png" alt="instagram">
+                    </a>
+
+                    <a href="#" class="twitter">
+                        <img src="" alt="">
+                    </a>
+
+                    <a href="#" class="facebook">
+                        <img src="" alt="">
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

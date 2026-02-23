@@ -1,0 +1,569 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* header section -----------> */
+header{
+    width: 100%;
+    background: rgb(86, 133, 164);
+    color: white;
+    font-size: 15px;
+}
+
+header .row{
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+}
+
+header .row .details{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+header .row .details .email a:hover{
+    color: rgb(33, 23, 23);
+    font-weight: 1000;
+}
+
+header .row .details .location, .email{
+    display:flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+header .row .details .location a{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+header .row .details .email a{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+
+header .row .social-media-links{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+header .row .social-media-links a img{
+    width: 30px;
+}
+
+header .row .social-media-links a img:hover{
+    width: 32px;
+}
+
+/* nav section ------------> */
+nav{
+    width: 100%;
+    background: white;
+    color: balck;
+    font-size: 15px;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 5px 40px rgba(51, 51, 51, 0.2);
+    z-index: 1000;
+}
+
+nav #navbar{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+nav #navbar #navbar-logo img{
+    width: 220px;
+}
+
+nav #navbar #navbar-logo span{
+    display: none;
+}
+
+nav #navbar-buttons #all-buttons{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 50px;
+}
+
+nav #navbar-buttons #all-buttons li a{
+    color: rgb(117, 116, 116);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav #navbar-buttons #all-buttons li a:hover{
+    color: rgb(46, 90, 119);
+    font-weight: 1000;
+}
+
+
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #container{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 30px;
+}
+
+main #container #details1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+main #container #details1 #image{
+    width: 50%;
+}
+
+main #container #details1 #image img{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+main #container #details1 .details{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(132, 131, 131)
+}
+
+main #container #details1 .details h1{
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+
+main #container #details1 .details p{
+    font-size: 18px;
+}
+
+main #container #details2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main #container #details2 h1{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+
+main #container #details2 p{
+    font-size: 18px;
+    color: rgba(75, 74, 74, 1);
+    padding: 0px 20px 0px 15px;
+}
+
+
+
+/* footer section -----------> */
+footer{
+    width: 100%;
+    max-height: 100vh;
+    background: rgba(44, 75, 91, 0.8);
+    display: flex;
+    justify-content: center;
+}
+
+footer #container{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 0px 10px 0px;
+}
+
+footer #container #footer-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+footer #container #footer-details #logo-links{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+footer #container #footer-details #logo-links .links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer #container #footer-details #logo-links img{
+    width: 220px;
+    height: 70px;
+}
+
+footer #container #footer-details #logo-links .links h1{
+    padding-bottom: 10px;
+    color: rgba(6, 204, 204, 0.8);
+    font-weight: 600;
+}
+
+footer #container #footer-details #logo-links .links a{
+    color: white;
+    font-size: 18px;
+}
+
+footer #container #footer-details #logo-links .links a:hover{
+    color: rgba(6, 204, 204, 0.8);
+}
+
+footer #container #footer-details #contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer #container #footer-details #contact-info h1{
+    color: rgba(6, 204, 204, 0.8);
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+footer #container #footer-details #contact-info .location,
+footer #container #footer-details #contact-info .phone{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+footer #container #footer-details #contact-info .email a:hover{
+    color: rgba(6, 204, 204, 0.8);
+}
+
+footer #container #footer-details #contact-info a,
+footer #container #footer-details #contact-info p{
+    color: white;
+    font-size: 18px;
+}
+
+footer #container #footer-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer #container #footer-bottom p{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer #container #footer-bottom .social-media-links{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+footer #container #footer-bottom .social-media-links a img{
+    width: 30px;
+}
+
+footer #container #footer-bottom .social-media-links a img:hover{
+    width: 32px;
+}
+
+
+
+/* Extra Large Devices (Desktops) */
+@media(max-width: 1200px) {
+    main #container {
+        width: 75%;
+    }
+
+    main #container #details1 .details h1{
+        font-size: 35px;
+    }
+
+    main #container #details1 .details p{
+        font-size: 15px;
+    }
+
+    main #container #details2 h1{
+        font-size: 25px;
+    }
+
+    main #container #details2 p{
+        font-size: 15px;
+    }
+
+    footer #container #footer-details #logo-links{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer #container #footer-details #contact-info{
+        justify-content: center;
+    }
+}
+
+
+/* Large Devices (small Laptop) */
+@media(max-width: 992px) {
+    header .row .details{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 15px 0px;
+    }
+
+    nav #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px 80px 50px 80px;
+        height: 20px;
+    }
+
+    nav #navbar #navbar-buttons{
+        width: 100%;
+    }
+
+    nav #navbar #navbar-buttons #all-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 30px;
+    }
+
+    nav #navbar #navbar-logo{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav #navbar #navbar-logo span{
+        display: block;
+        font-size: 40px;
+        padding-top: 10px;
+    }
+
+    nav #navbar #navbar-logo #navbar-close-icon{
+        display: none;
+    }
+
+    nav #navbar #navbar-logo #navbar-open-icon:hover{
+        color: rgba(46, 90, 119, 1);
+    }
+
+    nav #navbar #navbar-logo #navbar-close-icon:hover{
+        color: rgb(185, 29, 29);
+    }
+
+    main #container #details1{
+        flex-direction: column;
+    }
+
+    main #container #details1 #image{
+        width: 100%;
+    }
+
+    main #container #details1 .details{
+        width: 100%;
+    }
+}
+
+
+
+
+/* mediam Devices */
+@media(max-width: 800px) {
+    header .row .social-media-links{
+        display: none;
+    }
+
+    main #container{
+        width: 85%;
+    }
+
+    footer #container #footer-details{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    footer #container #footer-bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer #container #footer-bottom .social-media-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+
+
+@media(max-width: 660px) {
+    header .row{
+        padding-left: 20px;
+    }
+
+    nav #navbar{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+
+/* small devices (Large phone) */
+@media(max-width: 576px) {
+    main #container #details1 .details h1{
+        font-size: 25px;
+    }
+
+    main #container #details1 .details p{
+        font-size: 12px;
+    }
+
+    main #container #details2 h1{
+        font-size: 20px;
+    }
+
+    main #container #details2 p{
+        font-size: 12px;
+    }
+
+    footer #container #footer-details #logo-links img{
+        width: 190px;
+        height: 60px;
+    }
+
+    footer #container #footer-details #logo-links{
+        gap: 20px;
+    }
+
+    footer #container #footer-details #logo-links .links{
+        gap:5px;
+    }
+
+    footer #container #footer-details h1{
+        font-size: 28px;
+    }
+
+    footer #container #footer-details #contact-info{
+        gap: 5px;
+    }
+
+    footer #container #footer-details{
+        padding-bottom: 50px;
+    }
+
+    footer #container #footer-bottom p{
+    font-size: 15px;
+    }
+}
+
+
+
+
+/* extra small devices (phones) */
+@media(max-width: 480px) {
+    header .row .details a,
+    header .row .details p,
+    header .row .details .email p a{
+        font-size: 12px;
+    }
+
+    nav #navbar #navbar-logo img{
+        width: 180px;
+        height: 55px;
+    }
+
+    main #container #details1 .details h1{
+        font-size: 20px;
+    }
+
+    main #container #details1 .details p{
+        font-size: 11px;
+    }
+
+    main #container #details2 h1{
+        font-size: 17px;
+    }
+
+    main #container #details2 p{
+        font-size: 11px;
+    }
+
+    footer #container{
+        width: 90%;
+    }
+
+    footer #container #footer-details #logo-links img{
+        width: 170px;
+        height: 55px;
+    }
+
+    footer #container #footer-details #logo-links{
+        gap: 20px;
+    }
+
+    footer #container #footer-details #logo-links .links{
+        gap:5px;
+    }
+
+    footer #container #footer-details h1{
+        font-size: 25px;
+    }
+
+    footer #container #footer-details #contact-info{
+        gap: 5px;
+    }
+
+    footer #container #footer-details{
+        padding-bottom: 50px;
+    }
+}

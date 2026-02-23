@@ -1,0 +1,1079 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* header section -----------> */
+header{
+    width: 100%;
+    background: rgb(86, 133, 164);
+    color: white;
+    font-size: 15px;
+}
+
+header .row{
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+}
+
+header .row .details{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+header .row .details .email a:hover{
+    color: rgb(33, 23, 23);
+    font-weight: 1000;
+}
+
+header .row .details .location, .email{
+    display:flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+header .row .details .location a{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+header .row .details .email a{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+
+header .row .social-media-links{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+header .row .social-media-links a img{
+    width: 30px;
+}
+
+header .row .social-media-links a img:hover{
+    width: 32px;
+}
+
+/* nav section ------------> */
+nav{
+    width: 100%;
+    background: white;
+    color: balck;
+    font-size: 15px;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 5px 40px rgba(51, 51, 51, 0.2);
+    z-index: 1000;
+}
+
+nav #navbar{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+nav #navbar #navbar-logo img{
+    width: 220px;
+}
+
+nav #navbar #navbar-logo span{
+    display: none;
+}
+
+nav #navbar-buttons #all-buttons{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 50px;
+}
+
+nav #navbar-buttons #all-buttons li a{
+    color: rgb(117, 116, 116);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav #navbar-buttons #all-buttons li a:hover{
+    color: rgb(46, 90, 119);
+    font-weight: 1000;
+}
+
+
+/* home section ----------->  */
+main #section1 #home-image img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+main #section1 #container{
+    width: 70%;
+    margin: 40px 0;
+}
+
+main #section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-margin-top: 1000px;
+}
+
+main #section1 #container #home-details h1,
+main #section1 #container #home-details p {
+    text-align: center;
+    color: rgba(96, 98, 100, 1);
+}
+
+
+main #section1 #container #home-details h1{
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+main #section1 #container #home-details p{
+    font-size: 18px;
+}
+
+
+/* about section --------------> */
+main #section2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(175, 174, 174);
+    scroll-margin-top: 100px;
+}
+
+main #section2 #about{
+    width: 85%;
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    color: rgba(96, 98, 100, 1);
+    margin: 50px 0px;
+}
+
+main #section2 #about #container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 30px;
+    /* background: green; */
+}
+
+main #section2 #about #container #image-box{
+    width: 50%;
+}
+
+main #section2 #about #container img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+main #section2 #about #container #sub-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main #section2 #about #container #sub-container #our-mission,
+main #section2 #about #container #sub-container #our-approach{
+    background :white;
+    height: 50%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+main #section2 #about #container #sub-container #our-mission h1,
+main #section2 #about #container #sub-container #our-approach h1{
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+
+main #section2 #about #container #sub-container #our-mission p,
+main #section2 #about #container #sub-container #our-approach p{
+    font-size: 20px;
+}
+
+main #section2 #about #our-values{
+    background: white;
+    border-radius: 20px;
+    padding: 25px 20px;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main #section2 #about #our-values h1{
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+
+main #section2 #about #our-values p{
+    font-size: 20px;
+}
+
+/* service section ----------> */
+main #section3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: rgba(96, 98, 100, 1);
+    padding: 50px 0px;
+    scroll-margin-top: 100px;
+}
+
+main #section3 #services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #section3 #services h1{
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+main #section3 #services #container{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+
+main #section3 #services #container #sub-container img{
+    width: 100%;
+}
+
+main #section3 #services #container #sub-container{
+    min-height: 400px;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+main #section3 #services #container #sub-container #details{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 0px 30px;
+}
+
+main #section3 #services #container #sub-container #details h2{
+    color: rgb(6, 204, 204);
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+main #section3 #services #container #sub-container #details p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+main #section3 #services #container #sub-container #know-more-button{
+    background: rgb(44, 75, 91);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main #section3 #services #container #sub-container #know-more-button a{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main #section3 #services #container #sub-container #know-more-button:hover{
+    background: rgb(6, 204, 204);
+}
+
+main #section3 #services #container #sub-container:hover{
+    box-shadow: 0px 0px 30px rgba(28, 28, 28, 0.2);
+}
+
+/* careers section ------------> */
+main #section4{
+    width: 100%;
+    background: rgba(44, 75, 91, 0.8);
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+    scroll-margin-top: 100px;
+}
+
+main #section4 #container{
+    width: 85%;
+    display:flex;
+    flex-direction: row;
+}
+
+main #section4 #container #career-form{
+    width: 50%;
+}
+
+main #section4 #container #career-form h1{
+    font-size: 50px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+main #section4 #container #career-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+main #section4 #container #career-image img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+main #section4 #container #career-form form{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 40px;
+    gap: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+main #section4 #container #career-form form h2{
+    font-size: 30px;
+}
+
+main #section4 #container #career-form form input{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(72, 174, 218, 0.3);
+    padding: 0px 5px;
+    font-size: 16px;
+}
+
+main #section4 #container #career-form form #input-box{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+main #section4 #container #career-form form textarea{
+    min-height: 100px;
+    resize: none;
+    background: rgba(72, 174, 218, 0.3);
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+main #section4 #container #career-form form #career-submit-btn{
+    height: 50px;
+    background: rgba(44, 75, 91, 0.9);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+main #section4 #container #career-form form #career-submit-btn:hover{
+    background: rgba(6, 204, 204, 1);
+}
+
+/* contact section ------------> */
+main #section5{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    color: rgba(96, 98, 100, 1);
+    scroll-margin-top: 100px;
+}
+
+main #section5 #container{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+}
+
+main #section5 #container #contact-details{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 40px;
+}
+
+main #section5 #container #contact-form{
+    width: 50%;
+}
+
+main #section5 #container #contact-form form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    background: rgba(72, 174, 218, 0.3);
+    gap: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+main #section5 #container #contact-form form input{
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+main #section5 #container h1{
+    font-size: 45px;
+}
+
+main #section5 #container h2{
+    font-size: 22px;
+    color: rgba(6, 204, 204, 1);
+}
+
+main #section5 #container p{
+    font-size: 18px;
+}
+
+main #section5 #container #contact-details .email,
+main #section5 #container #contact-details .location,
+main #section5 #container #contact-details .phone{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+main #section5 #container #contact-details a{
+    color: rgba(96, 98, 100, 1);
+}
+
+main #section5 #container #contact-details .email a:hover{
+    color: rgba(6, 204, 204, 1);
+}
+
+main #section5 #container #contact-details #contact-details-btn{
+    background: rgba(96, 98, 100, 1);
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+}
+
+main #section5 #container #contact-details #contact-details-btn a{
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+main #section5 #container #contact-details #contact-details-btn:hover{
+    background: rgba(6, 204, 204, 1);
+}
+
+main #section5 #container #contact-form form textarea{
+    min-height: 50px;
+    max-height: 120px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    resize: vertical;
+}
+
+main #section5 #container #contact-form form #contact-form-btn{
+    height: 50px;
+    font-size: 20px;
+    background: rgba(96, 98, 100, 1);
+    color: white;
+    border: none;
+    border-radius: 100px;
+}
+
+main #section5 #container #contact-form form #contact-form-btn:hover{
+    background: rgba(6, 204, 204, 1);
+}
+
+/* footer section -----------> */
+footer{
+    width: 100%;
+    max-height: 100vh;
+    background: rgba(44, 75, 91, 0.8);
+    display: flex;
+    justify-content: center;
+}
+
+footer #container{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 0px 10px 0px;
+}
+
+footer #container #footer-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+footer #container #footer-details #logo-links{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+footer #container #footer-details #logo-links .links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer #container #footer-details #logo-links img{
+    width: 220px;
+    height: 70px;
+}
+
+footer #container #footer-details #logo-links .links h1{
+    padding-bottom: 10px;
+    color: rgba(6, 204, 204, 0.8);
+    font-weight: 600;
+}
+
+footer #container #footer-details #logo-links .links a{
+    color: white;
+    font-size: 18px;
+}
+
+footer #container #footer-details #logo-links .links a:hover{
+    color: rgba(6, 204, 204, 0.8);
+}
+
+footer #container #footer-details #contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer #container #footer-details #contact-info h1{
+    color: rgba(6, 204, 204, 0.8);
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+footer #container #footer-details #contact-info .location,
+footer #container #footer-details #contact-info .phone{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+footer #container #footer-details #contact-info .email a:hover{
+    color: rgba(6, 204, 204, 0.8);
+}
+
+footer #container #footer-details #contact-info a,
+footer #container #footer-details #contact-info p{
+    color: white;
+    font-size: 18px;
+}
+
+footer #container #footer-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer #container #footer-bottom p{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer #container #footer-bottom .social-media-links{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+footer #container #footer-bottom .social-media-links a img{
+    width: 30px;
+}
+
+footer #container #footer-bottom .social-media-links a img:hover{
+    width: 32px;
+}
+
+
+/* Extra Large Devices (Desktops) */
+@media(max-width: 1200px) {
+    main #section5 #container{
+        width: 85%;
+    }
+
+    footer #container #footer-details #logo-links{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer #container #footer-details #contact-info{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1100px) {
+    main #section2 #about #container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main #section2 #about #container #image-box,
+    main #section2 #about #container #sub-container{
+        width: 100%;
+    }
+
+    main #section2 #about{
+        width: 75%;
+    }
+
+    main #section2 #about #container #sub-container #our-mission h1,
+    main #section2 #about #container #sub-container #our-approach h1,
+    main #section2 #about #our-values h1{
+        font-size: 40px;
+    }
+
+    main #section3 #services #container{
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+    }
+
+    main #section3 #services #container #sub-container #details h2{
+        font-size: 40px;
+    }
+
+    main #section3 #services #container #sub-container #details p{
+        font-size: 22px;
+    }
+
+    main #section4 #container{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 65%;
+    }
+
+    main #section4 #container #career-form{
+        width: 100%;
+    }
+
+    main #section5 #container{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 65%;
+    }
+
+    main #section5 #container #contact-form,
+    main #section5 #container #contact-details{
+        width: 100%;
+    }
+}
+
+/* Large Devices (small Laptop) */
+@media(max-width: 992px) {
+    header .row .details{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 15px 0px;
+    }
+
+    nav #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px 80px 50px 80px;
+        height: 20px;
+    }
+
+    nav #navbar #navbar-buttons{
+        width: 100%;
+    }
+
+    nav #navbar #navbar-buttons #all-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 30px;
+    }
+
+    nav #navbar #navbar-logo{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav #navbar #navbar-logo span{
+        display: block;
+        font-size: 40px;
+        padding-top: 10px;
+    }
+
+    nav #navbar #navbar-logo #navbar-close-icon{
+        display: none;
+    }
+
+    nav #navbar #navbar-logo #navbar-open-icon:hover{
+        color: rgba(46, 90, 119, 1);
+    }
+
+    nav #navbar #navbar-logo #navbar-close-icon:hover{
+        color: rgb(185, 29, 29);
+    }
+
+    main #section1 #home-image img{
+        height: 80vh;
+    }
+}
+
+
+/* mediam Devices */
+@media(max-width: 800px) {
+    header .row .social-media-links{
+        display: none;
+    }
+
+    main #section1 #home-image img{
+        height: 60vh;
+    }
+
+    main #section4 #container #career-form form #input-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main #section4 #container #career-form form #input-box input{
+        width: 98%;
+    }
+
+    main #section4 #container #career-image img{
+        width: 250px;
+        height: 250px;
+        margin-left: 50px;
+    }
+
+    footer #container #footer-details{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    footer #container #footer-bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer #container #footer-bottom .social-media-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+
+@media(max-width: 660px) {
+    header .row{
+        padding-left: 20px;
+    }
+
+    nav #navbar{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    main #section1 #home-image img{
+        height: 50vh;
+    }
+
+    main #section1 #container{
+        width: 85%;
+    }
+
+    main #section2 #about{
+        width: 90%;
+    }
+
+    main #section3 #services #container{
+        width: 90%;
+    }
+
+    main #section4 #container{
+        width: 90%;
+    }
+
+    main #section5 #container{
+        width: 90%;
+    }
+}
+
+/* small devices (Large phone) */
+@media(max-width: 576px) {
+    main #section1 #container #home-details h1{
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+
+    main #section1 #container #home-details p{
+        font-size: 15px;
+    }
+
+    main #section2 #about #container #sub-container #our-mission h1,
+    main #section2 #about #container #sub-container #our-approach h1,
+    main #section2 #about #our-values h1{
+        font-size: 30px;
+    }
+
+    main #section2 #about #container #sub-container #our-mission p,
+    main #section2 #about #container #sub-container #our-approach p,
+    main #section2 #about #our-values p{
+        font-size: 18px;
+    }
+
+    main #section3 #services h1{
+        font-size: 40px;
+    }
+
+    main #section3 #services #container #sub-container #details h2{
+        font-size: 30px;
+    }
+
+    main #section3 #services #container #sub-container #details p{
+        font-size: 20px;
+    }
+
+    main #section4 #container #career-form h1{
+        font-size: 40px;
+    }
+
+    main #section4 #container #career-form form h2{
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    main #section4 #container #career-image img{
+        width: 220px;
+        height: 220px;
+    }
+
+    main #section5 #container h1{
+        font-size: 35px;
+    }
+
+    footer #container #footer-details #logo-links img{
+        width: 190px;
+        height: 60px;
+    }
+
+    footer #container #footer-details #logo-links{
+        gap: 20px;
+    }
+
+    footer #container #footer-details #logo-links .links{
+        gap:5px;
+    }
+
+    footer #container #footer-details h1{
+        font-size: 28px;
+    }
+
+    footer #container #footer-details #contact-info{
+        gap: 5px;
+    }
+
+    footer #container #footer-details{
+        padding-bottom: 50px;
+    }
+
+    footer #container #footer-bottom p{
+    font-size: 15px;
+    }
+}
+
+
+/* extra small devices (phones) */
+@media(max-width: 480px) {
+    header .row .details a,
+    header .row .details p,
+    header .row .details .email p a{
+        font-size: 12px;
+    }
+
+    nav #navbar #navbar-logo img{
+        width: 180px;
+        height: 55px;
+    }
+
+    main #section1 #container #home-details h1{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    main #section1 #container #home-details p{
+        font-size: 15px;
+    }
+
+    main #section2 #about #container #sub-container #our-mission h1,
+    main #section2 #about #container #sub-container #our-approach h1,
+    main #section2 #about #our-values h1{
+        font-size: 25px;
+    }
+
+    main #section2 #about #container #sub-container #our-mission p,
+    main #section2 #about #container #sub-container #our-approach p,
+    main #section2 #about #our-values p{
+        font-size: 15px;
+    }
+    
+    main #section3 #services h1{
+        font-size: 35px;
+    }
+
+    main #section3 #services #container #sub-container #details h2{
+        font-size: 25px;
+    }
+
+    main #section3 #services #container #sub-container #details p{
+        font-size: 15px;
+    }
+
+    main #section4 #container #career-form h1{
+        font-size: 35px;
+    }
+
+    main #section4 #container #career-form form h2{
+        font-size: 20px;
+    }
+    
+    main #section4 #container #career-form form{
+        gap: 15px;
+        padding: 20px;
+    }
+
+    main #section4 #container #career-form form #input-box{
+        gap: 15px;
+    }
+
+    main #section4 #container #career-image img{
+        width: 200px;
+        height: 200px;
+    }
+
+    main #section5 #container h1{
+        font-size: 30px;
+    }
+
+    main #section5 #container #contact-form form{
+        gap: 10px;
+        padding: 20px;
+    }
+
+    footer #container{
+        width: 90%;
+    }
+
+    footer #container #footer-details #logo-links img{
+        width: 170px;
+        height: 55px;
+    }
+
+    footer #container #footer-details #logo-links{
+        gap: 20px;
+    }
+
+    footer #container #footer-details #logo-links .links{
+        gap:5px;
+    }
+
+    footer #container #footer-details h1{
+        font-size: 25px;
+    }
+
+    footer #container #footer-details #contact-info{
+        gap: 5px;
+    }
+
+    footer #container #footer-details{
+        padding-bottom: 50px;
+    }
+}
+
+
+@media(max-width: 350px) {
+    main #section4 #container #career-image img{
+        width: 170px;
+        height: 170px;
+    }
+
+    main #section4 #container #career-form h1{
+        font-size: 30px;
+    }
+
+    main #section4 #container #career-form form h2{
+        font-size: 17px;
+    }
+}
