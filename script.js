@@ -15,14 +15,14 @@ function closeSidebar() {
 }
 
 
-function goToSection(event, sectionId, urlName) {
-    event.preventDefault();
+// function goToSection(event, sectionId, urlName) {
+//     event.preventDefault();
 
-    // URL me custom name show karega
-    history.pushState(null, null, urlName);
+//     // URL me custom name show karega
+//     history.pushState(null, null, urlName);
 
-    // Actual scroll hoga original id par
-    document.getElementById(sectionId).scrollIntoView({
-        behavior: "smooth"
-    });
-}
+//     // Actual scroll hoga original id par
+//     document.getElementById(sectionId).scrollIntoView({
+//         behavior: "smooth"
+//     });
+// }
